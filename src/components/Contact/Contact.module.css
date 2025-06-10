@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #272727;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.text:first-child {
+    margin-bottom: 4px;
+}
+
+.text {
+    margin-bottom: 4px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.deleteButton {
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background: #ddd;
+}
