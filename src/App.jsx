@@ -5,7 +5,7 @@ import SearchBox from './components/SearchBox/SearchBox';
 import ContactList from './components/ContactList/ContactList';
 
 import { useEffect } from 'react';
-import { fetchContacts } from './redux/contactsOps';
+import { fetchContacts } from './redux/contacts/operations';
 import { useDispatch } from 'react-redux';
 
 export default function App() {
