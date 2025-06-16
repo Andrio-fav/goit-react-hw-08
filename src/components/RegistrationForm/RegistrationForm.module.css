@@ -1,0 +1,40 @@
+.wrapper {
+    border: 1px solid #272727;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.field {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 4px 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #272727;
+    margin-bottom: 2px;
+}
+
+.field:focus {
+    border: 1px solid blue;
+}
+
+.error {
+    display: block;
+    padding-left: 12px;
+    color: red;
+}
+
+.btn {
+    display: block;
+    margin: 12px auto 0;
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background: #ddd;
+}

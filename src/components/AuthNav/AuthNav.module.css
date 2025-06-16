@@ -1,0 +1,15 @@
+.authNavContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.authNavLink {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.authNavActiveLink {
+  color: #2248bc;
+}
