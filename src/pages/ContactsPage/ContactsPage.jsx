@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import PageTitle from "../../components/PageTitle/PageTitle";
 import {ContactForm} from "../../components/ContactForm/ContactForm";
 import {SearchBox} from "../../components/SearchBox/SearchBox";
 import {ContactList} from "../../components/ContactList/ContactList"; 
@@ -19,7 +18,7 @@ export default function ContactsPage() {
 
   return (
     <>
-        <PageTitle>Your contacts</PageTitle>
+        <h1>Your contacts</h1>
         <ContactForm />
         <SearchBox />
         <div>{isLoading && "Request in progress..."}</div>
