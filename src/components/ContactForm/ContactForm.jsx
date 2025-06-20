@@ -13,12 +13,12 @@ export default function ContactForm() {
     dispatch(addContact(values));
     actions.resetForm();
   }
-
+  
   const initialValues = {
-    id: '',
     name: '',
     number: '',
   };
+
 
   const FormSchema = Yup.object().shape({
     name: Yup.string().min(3, 'Too Short!').max(50, 'Too Long!').required('Required'),
