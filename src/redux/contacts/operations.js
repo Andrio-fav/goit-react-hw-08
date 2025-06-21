@@ -62,7 +62,7 @@ export const deleteContact = createAsyncThunk(
         },
       });
 
-      return res.data.id;
+      return contactId;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
