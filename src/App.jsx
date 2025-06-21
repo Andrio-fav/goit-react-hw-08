@@ -12,6 +12,8 @@ import { selectIsRefreshing } from './redux/auth/selectors';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import RestrictedRoute from './components/RestrictedRoute/RestrictedRoute';
 
+import AppBar from './components/AppBar/AppBar'; 
+
 import { lazy, Suspense } from 'react';
 
 // Lazy-loaded pages
@@ -40,19 +42,17 @@ export default function App() {
 
   return (
     <div className={css.wrapper}>
+      <AppBar /> 
       <Suspense fallback={<div className={css.loader}>Loading page...</div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-
           <Route element={<RestrictedRoute />}>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
           </Route>
-
           <Route element={<PrivateRoute />}>
             <Route path="/contacts" element={<ContactsPage />} />
           </Route>
-
         </Routes>
       </Suspense>
 
